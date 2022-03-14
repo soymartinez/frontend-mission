@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pastelería</title>
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+</head>
+
+<body class="bg-[#0f172a] min-h-screen">
+    <nav class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-800">
+        <div class="container flex flex-wrap justify-between items-center mx-auto">
+            <a href="#" class="flex items-center">
+                <img src="/images/logo.png" class="mr-3 h-6 sm:h-10" alt="Logo" />
+                <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Pastelería <span
+                        class="font-light">Martinez</span></span>
+            </a>
+            <div class="hidden w-full md:block md:w-auto" id="mobile-menu">
+                <ul class="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
+                    <li>
+                        <a href="/diseño.html"
+                            class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 
+                            hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 
+                            md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white 
+                            md:dark:hover:bg-transparent dark:border-gray-700">Diseño</a>
+                    </li>
+                    <li>
+                        <a href="/administrador.html"
+                            class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 
+                            hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 
+                            md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white 
+                            md:dark:hover:bg-transparent dark:border-gray-700">Administrador</a>
+                    </li>
+                    <li>
+                        <a href="/quienessomos.html"
+                            class="block py-2 pr-4 pl-3 text-gray-700 hover:bg-gray-50 md:hover:bg-transparent 
+                            md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white 
+                            dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
+                            ¿Quienes somos?</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="px-4">
+        <!-- Diseño de pastel -->
+        <div class="full-screen h-screen">
+            <div class="flex h-4/5 justify-center items-center">
+                <div class="block">
+                    <h1 class="text-5xl font-bold text-white mb-5">
+                        Diseña tu pastel
+                    </h1>
+                    <div class="sabor-decoracion grid grid-cols-2 gap-2 mb-4">
+                        <div class="block p-6 bg-[#1d2b4e] shadow-xl rounded-md">
+                            <span class="text-[#e2e8f0] text-2xl font-bold">Sabores</span>
+                            <div class="mt-2">
+                                <div>
+                                    <label class="inline-flex items-center">
+                                        <input type="checkbox" id="sabor" class="form-checkbox" checked>
+                                        <span class="ml-2 text-[#e2e8f0]">Tres leches | $150</span>
+                                    </label>
+                                </div>
+                                <div>
+                                    <label class="inline-flex items-center">
+                                        <input type="checkbox" class="form-checkbox">
+                                        <span class="ml-2 text-[#e2e8f0]">Chocolate | $150</span>
+                                    </label>
+                                </div>
+                                <div>
+                                    <label class="inline-flex items-center">
+                                        <input type="checkbox" class="form-checkbox">
+                                        <span class="ml-2 text-[#e2e8f0]">Oreo | $180</span>
+                                    </label>
+                                </div>
+                                <div>
+                                    <label class="inline-flex items-center">
+                                        <input type="checkbox" class="form-checkbox">
+                                        <span class="ml-2 text-[#e2e8f0]">Café | $170</span>
+                                    </label>
+                                </div>
+                                <div>
+                                    <label class="inline-flex items-center">
+                                        <input type="checkbox" class="form-checkbox" checked>
+                                        <span class="ml-2 text-[#e2e8f0]">Frutas | $250</span>
+                                    </label>
+                                </div>
+                                <div>
+                                    <label class="inline-flex items-center">
+                                        <input type="checkbox" class="form-checkbox">
+                                        <span class="ml-2 text-[#e2e8f0]">Nues | $180</span>
+                                    </label>
+                                </div>
+                                <div>
+                                    <label class="inline-flex items-center">
+                                        <input type="checkbox" class="form-checkbox">
+                                        <span class="ml-2 text-[#e2e8f0]">Vainilla | $185</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="block p-6 bg-[#1d2b4e] shadow-xl rounded-md w-60">
+                            <span class="text-[#e2e8f0] text-2xl font-bold">Adornos</span>
+                            <div class="mt-2">
+                                <div>
+                                    <label class="inline-flex items-center">
+                                        <input type="checkbox" class="form-checkbox text-indigo-600" checked>
+                                        <span class="ml-2 text-[#e2e8f0]">XV | $30</span>
+                                    </label>
+                                </div>
+                                <div>
+                                    <label class="inline-flex items-center">
+                                        <input type="checkbox" class="form-checkbox text-green-500">
+                                        <span class="ml-2 text-[#e2e8f0]">Novios | $15</span>
+                                    </label>
+                                </div>
+                                <div>
+                                    <label class="inline-flex items-center">
+                                        <input type="checkbox" class="form-checkbox text-pink-600">
+                                        <span class="ml-2 text-[#e2e8f0]">Deporte | $180</span>
+                                    </label>
+                                </div>
+                                <div>
+                                    <label class="inline-flex items-center">
+                                        <input type="checkbox" class="form-checkbox text-pink-600">
+                                        <span class="ml-2 text-[#e2e8f0]">Superhereo | $110</span>
+                                    </label>
+                                </div>
+                                <div>
+                                    <label class="inline-flex items-center">
+                                        <input type="checkbox" class="form-checkbox text-pink-600">
+                                        <span class="ml-2 text-[#e2e8f0]">Velas especiales | $15</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full flex justify-end">
+                        <a href="#datos-usuario">
+                            <button class=" bg-pink-600 hover:bg-pink-700 
+                                                font-bold text-[#e2e8f0] 
+                                                py-1 px-3 rounded-l-2xl rounded-r-md transition-all">
+                                Siguiente
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Datos de usuario -->
+        <div class="full-screen h-screen">
+            <div class="flex h-5/6 justify-center items-center">
+                <div class="block w-80">
+                    <h1 class="text-5xl font-bold text-white mb-5">
+                        Ingresa tus datos
+                    </h1>
+                    <div class="descripcion p-4 bg-[#0f172a] border-2 border-[#fffc00] shadow-2xl mb-5 rounded-xl">
+                        <h2 class="text-xl font-bold text-[#e2e8f0]">
+                            Descripción:
+                        </h2>
+                        <span class="px-8 text-base font-semibold text-[#e2e8f0] block">Tres leches</span>
+                        <span class="px-8 text-base font-semibold text-[#e2e8f0] block">Frutas</span>
+                        <span class="px-8 text-base font-semibold text-[#e2e8f0] block">XV</span>
+                    </div>
+                    <form>
+                        <label class="block mb-3">
+                            <span class="block text-sm font-medium text-[#e2e8f0]">Nombre</span>
+                            <input required type="text" class="mt-1 block w-full px-3 py-2 bg-white border border-slate-300 rounded-md text-sm shadow-sm placeholder-slate-400
+                                  focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500
+                                  disabled:bg-slate-50 disabled:text-slate-500 disabled:border-slate-200 disabled:shadow-none
+                                  invalid:border-pink-500 invalid:text-pink-600
+                                  focus:invalid:border-pink-500 focus:invalid:ring-pink-500
+                                " />
+                        </label>
+                        <label class="block mb-3">
+                            <span class="block text-sm font-medium text-[#e2e8f0]">Telefono</span>
+                            <input required type="number" maxlength="10"
+                                oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                                class="mt-1 block w-full px-3 py-2 bg-white border border-slate-300 rounded-md text-sm shadow-sm placeholder-slate-400
+                                  focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500
+                                  disabled:bg-slate-50 disabled:text-slate-500 disabled:border-slate-200 disabled:shadow-none
+                                  invalid:border-pink-500 invalid:text-pink-600
+                                  focus:invalid:border-pink-500 focus:invalid:ring-pink-500
+                                " />
+                        </label>
+                        <label class="block mb-4">
+                            <span class="block text-sm font-medium text-[#e2e8f0]">Correo electrónico</span>
+                            <input required type="email" class="mt-1 block w-full px-3 py-2 bg-white border border-slate-300 rounded-md text-sm shadow-sm placeholder-slate-400
+                                  focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500
+                                  disabled:bg-slate-50 disabled:text-slate-500 disabled:border-slate-200 disabled:shadow-none
+                                  invalid:border-pink-500 invalid:text-pink-600
+                                  focus:invalid:border-pink-500 focus:invalid:ring-pink-500
+                                " />
+                        </label>
+                        <div class="w-full flex justify-end" id="datos-usuario">
+                            <a href="#datos-usuario">
+                                <button class=" bg-pink-600 hover:bg-pink-700 
+                                                    font-bold text-[#e2e8f0] 
+                                                    py-1 px-3 rounded-l-2xl rounded-r-md transition-all">
+                                    Siguiente
+                                </button>
+                            </a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
